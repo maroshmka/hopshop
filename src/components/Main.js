@@ -7,6 +7,7 @@ import sleso2 from '../images/persons/sleso2.png'
 import prokrastinol from '../images/prokrastinol.png'
 import homeocukor from '../images/homeocukor_z_neba.png'
 import hopsup from '../images/logo_hop_sup.png'
+import '../assets/css/iframe.css'
 
 class Main extends React.Component {
   render() {
@@ -68,8 +69,8 @@ class Main extends React.Component {
           
           <div>
             <h4>Pozrite si video a dozviete sa viac!</h4>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" width="560" height="349" src="https://www.youtube.com/embed/alMUgDEFzmk/" title="prokrastinol youtube"></iframe>
+            <div class="iframe-container">
+                <iframe width="560" height="349" src="https://www.youtube.com/embed/alMUgDEFzmk/" title="prokrastinol youtube" allowFullScreen></iframe>
             </div>
           </div>
           <hr></hr>
