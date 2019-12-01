@@ -8,16 +8,16 @@ const Header = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Homeocukor</h1>
-                <p>Vec, co vam odjebe dekel.</p>
+                <h1>HopShop</h1>
+                <p>Povedzte zbohom všetkým chorobám!</p>
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('intro')}}>Intro</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('work')}}>Work</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>About</a></li>
-                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Contact</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('prokrastinol')}}>Prokrastinol</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('homeocukor')}}>Homeocukor</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('about')}}>O nás</a></li>
+                <li><a href="javascript:;" onClick={() => {props.onOpenArticle('contact')}}>Kontakt</a></li>
             </ul>
         </nav>
     </header>

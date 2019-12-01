@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import Contact from './Contact'
+import dano from '../images/persons/dano.png'
+import majoh from '../images/persons/majoh.png'
+import sleso2 from '../images/persons/sleso2.png'
+import prokrastinol from '../images/prokrastinol.png'
+import homeocukor from '../images/homeocukor_z_neba.png'
+import hopsup from '../images/logo_hop_sup.png'
 
 class Main extends React.Component {
   render() {
@@ -22,49 +26,87 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="prokrastinol"
+          className={`${this.props.article === 'prokrastinol' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">Prokrastinol</h2>
+          <h3>Vaše problémy sa stanú budúcnosťou</h3>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={prokrastinol} alt="prokrastinol-logo"/>
           </span>
-          <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
-          </p>
+          <hr></hr>
+
+          <div>
+              <h5><i class="fa fa-thumbs-up"></i>Žiadne vedľajšie účinky</h5>
+              <p>
+                  Podľa organizácie WHO je tento liek takmer zázračný. Pri používaní pacienti neuvádzajú žiadne
+                  vedľajšie účinky. Ak by sa objavili vedľajšie účinky, nemáte sa čoho obávať! Budú vám doslova
+                  ukradnuté!
+              </p>
+          </div>
+
+          <div>
+              <h5><i class="fa fa-user-md"></i>Pokroková medicína</h5>
+              <p>
+                  Liek vyvjíjali naši experti s použitím najnovších technológií. Testy prebiehali na študentoch,
+                  z rôznych univerzít. Sme jedni z mála, ktorí vedia zaručiť takúto kvalitu.
+              </p>
+          </div>
+          
+          <div>
+              <h5><i class="fa fa-fast-forward"></i>Výsledky uvidíte okamžite!</h5>
+              <p>
+                  Po použití prokrastinolu sa výsledky dostavia do 20s. Začnete cítiť ako vám ubúdajú posledné
+                  pozostatky pocitu viny. Prestanete sa cítiť za hocičo zodpovedný. A to priam okamžite, priatelia!
+              </p>
+          </div>
+          
+          <hr></hr>
+          
+          <div>
+            <h4>Pozrite si video a dozviete sa viac!</h4>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="349" src="https://www.youtube.com/embed/alMUgDEFzmk/" title="prokrastinol youtube"></iframe>
+            </div>
+          </div>
+          <hr></hr>
+          <div>
+            <p>
+              Neuveriteľné! Pozrite sa ako hodnotia náš produkt šťastlivci, ktorí sa odvážili ho vyskúšať!
+            </p>
+            <blockquote>
+              <img class="img-circle" src={dano} alt="dano" style={{width: 100, height:100}}/>
+              <p>Musím povedať, že táto moderná medicína je v dnešnej dobe vysoko pokroková! <small>Daniel M.</small></p>
+            
+            
+              <img class="img-circle" src={majoh} alt="dano" style={{width: 100, height:100}}/>
+              <p>Mali sme zápočty... Aj sme sa chceli učiť... Teraz už nemusíme... <small>Mário H.</small></p>
+            
+
+              <img class="img-circle" src={sleso2} alt="dano" style={{width: 100, height:100}}/>
+              <p>Ako som prišiel na internát, bol som hrozne vystrašený. Až kým mi kamarát nepriniesol
+                Prokrastinol. Zmenilo mi to život. Už žiadna zodpovednosť! 
+                <small>Peter Š.</small>
+              </p>
+            </blockquote>
+          </div>
+
           {close}
         </article>
 
         <article
-          id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
+          id="homeocukor"
+          className={`${this.props.article === 'homeocukor' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Homeocukor</h2>
           <span className="image main">
-            <img src={pic02} alt="" />
+            <img src={homeocukor} alt="homeocukor-logo"/>
           </span>
           <p>
             Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
@@ -91,18 +133,12 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">HopŠup tím!</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={hopsup} alt="hopsup-logo"/>
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Dobre nám to dziga.
           </p>
           {close}
         </article>
@@ -114,59 +150,10 @@ class Main extends React.Component {
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Contact</h2>
-          <form method="post" action="#">
-            <div className="field half first">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div className="field half">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" id="email" />
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" id="message" rows="4"></textarea>
-            </div>
-            <ul className="actions">
-              <li>
-                <input type="submit" value="Send Message" className="special" />
-              </li>
-              <li>
-                <input type="reset" value="Reset" />
-              </li>
-            </ul>
-          </form>
-          <ul className="icons">
-            <li>
-              <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
-              >
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
-              >
-                <span className="label">GitHub</span>
-              </a>
-            </li>
-          </ul>
+          <Contact></Contact>
           {close}
         </article>
+      
       </div>
     )
   }
