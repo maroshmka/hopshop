@@ -8,7 +8,7 @@ const Header = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-                <h1>HopShop</h1>
+                <a href="https://www.youtube.com/channel/UC_uiRd-nXWe4RdA8TwGYZfg" target="_blank"> <h1>HopShop</h1></a>
                 <p>Povedzte zbohom všetkým chorobám!</p>
             </div>
         </div>
