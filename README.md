@@ -1,6 +1,6 @@
 # HopShop by HopSup team
 
-Web pre https://hopsupshop.netlify.com/
+Web https://hopsup.shop/
 
 Negenericky, usity na mieru.
 
