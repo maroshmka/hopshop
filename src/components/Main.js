@@ -141,7 +141,7 @@ class Main extends React.Component {
           <div>
             <h4>Pozrite si video a dozviete sa viac!</h4>
             <div class="iframe-container">
-                <iframe width="560" height="349" src="" title="homeocukor youtube" allowFullScreen></iframe>
+                <iframe width="560" height="349" src="https://youtu.be/RdPrJSK1VyI" title="homeocukor youtube" allowFullScreen></iframe>
             </div>
           </div>
 
