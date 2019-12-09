@@ -42,7 +42,7 @@ const Layout = ({ children, location }) => {
             title={data.site.siteMetadata.title}
             meta={[
               { name: 'description', content: 'Hopshop by hopsup comedy team.' },
-              { name: 'keywords', content: 'fun, comedy, prokrastinol, homeocukor, hopsup' },
+              { name: 'keywords', content: 'fun, comedy, prokrastinol, homeocukor, hopsup, Hop Šup, HopŠup, teleshoping, homeoborovička, Hans Fuchs, komédia' },
             ]}
           >
             <html lang="sk" />
